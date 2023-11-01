@@ -1,0 +1,35 @@
+GET http://localhost:8080/home/secure
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjk1OTE0MjI3LCJleHAiOjE2OTU5MTQyODcsInRlc3QiOiJxYWxheSIsImlzbWkiOiJLZXRtb25qb24ifQ.IsJ6mDuvhE5mddHoKhqWyUSsullm3yJw6_zD2Y_xqHY
+
+###
+POST http://localhost/auth/login
+Content-Type: application/json
+
+{
+  "username": "tdxragnarok2004@gmail.com",
+  "password": "Root123"
+}
+
+###
+GET http://localhost/payment
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNjk2MzUyOTE4LCJleHAiOjE2OTYzNTg5MTgsInRlc3QiOiJxYWxheSIsImlzbWkiOiJUZXNoYXZveSJ9.D5LzyYp-81IABqLfCwBCyfNKHPd7g8zIDW5e4O0EUZI
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwiaWF0IjoxNjk2MzQyMzU1LCJleHAiOjE2OTYzNDgzNTUsInRlc3QiOiJxYWxheSIsImlzbWkiOiJLZXRtb25qb24ifQ.udrwqE02EGv2KtQJFoFn4fAm5TfmDdbLlKe1G3lQTQ8
+
+
+###
+DELETE http://localhost/payment
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjk2MzUzNjI5LCJleHAiOjE2OTYzNTk2MjksInRlc3QiOiJxYWxheSIsImlzbWkiOiJUZXNoYXZveSJ9.7Zz6s4wuYAuCu1MzU-roQ_VqzleAqj_SzjXnQpk9YQg
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzIiwiaWF0IjoxNjk2MzQyMzU1LCJleHAiOjE2OTYzNDgzNTUsInRlc3QiOiJxYWxheSIsImlzbWkiOiJLZXRtb25qb24ifQ.udrwqE02EGv2KtQJFoFn4fAm5TfmDdbLlKe1G3lQTQ8
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjk2MzQ1Mzc5LCJleHAiOjE2OTYzNTEzNzksInRlc3QiOiJxYWxheSIsImlzbWkiOiJLZXRtb25qb24ifQ.2jqdHu807idF1f_84ALVggBMgqdYNKaDVBjfVZXiC2Q
+
+
+###
+POST http://localhost/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "tdxragnarok2004@gmail.com",
+  "password": "Root123",
+  "prePassword": "Root123",
+  "name": "Teshavoy"
+}
